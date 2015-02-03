@@ -23,7 +23,7 @@
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="ImagePicker">
+            <feature name="EAAssetPicker">
                 <param name="ios-package" value="EAAssetPicker"/>
             </feature>
         </config-file>
