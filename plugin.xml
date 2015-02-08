@@ -81,6 +81,9 @@
         <header-file src="src/ios/src/NSDateFormatter+timeIntervalFormatter.h" />
         <source-file src="src/ios/src/NSDateFormatter+timeIntervalFormatter.m" />
         
+        <header-file src="src/ios/src/ALAssetsLibrary+CustomPhotoAlbum.h" />
+        <source-file src="src/ios/src/ALAssetsLibrary+CustomPhotoAlbum.m" />
+
         <resource-file src="src/ios/Images.xcassets" />
         <resource-file src="src/ios/photo_camera_icon.png" />
         <resource-file src="src/ios/photo_camera_icon@2x.png" />
