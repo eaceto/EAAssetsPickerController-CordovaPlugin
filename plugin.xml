@@ -20,6 +20,24 @@
         <clobbers target="plugins.assetPicker" />
     </js-module>
     
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="EAAssetPicker">
+                <param name="android-package" value="com.ezequielaceto.android.EAAssetPicker"/>
+            </feature>
+        </config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />            
+            <uses-permission android:name="android.permission.CAMERA" />
+        </config-file>
+
+		<source-file src="src/android/com/ezequielaceto/android/EAAssetPicker.java" target-dir="src/com/ezequielaceto/android" />
+        
+    </platform>
+    
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
